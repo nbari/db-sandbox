@@ -1,0 +1,1 @@
+https://github.com/basho/riak-python-client/wiki/Tutorial-%28old%29
