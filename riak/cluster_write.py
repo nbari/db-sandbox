@@ -20,11 +20,11 @@ for ip in pool:
 
 
 for key in range(1000):
-    client[key % 5].new('%s' % key, data={
+    client[key % 5].new('%d-%s' % (key, pool[key % 5]), data={
         'uuid': str(uuid4()),
         'time': time.time()
         }).store()
-    print ("Storing key %d" % key)
+    print "Storing key %d-%s" % (key, pool[key % 5])
 
 elapsed_time = time.time() - start_time
 
