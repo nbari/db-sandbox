@@ -17,10 +17,9 @@ for ip in pool:
     c = c.bucket('test')
     client.append(c)
 
+key = '998-3'
 
-for key in range(1000):
-    print 'Stored data for key %d-%s: %s' % (
-        key, pool[key % 5], client[key % 5].get('%d-%s' % (key, pool[key % 5])).data)
+print 'Stored data for key %s: %s' % (key, client[3].get(key).data)
 
 
 elapsed_time = time.time() - start_time

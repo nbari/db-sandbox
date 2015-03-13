@@ -20,8 +20,9 @@ for ip in pool:
 
 
 for key in range(1000):
-    print "Deleting %d-%s" % (key, key % 5)
-    print client[key % 5].get('%d-%s' % (key, key % 5)).delete()
+    print "Deleting %d-%s" % (key, pool[key % 5])
+    r = client[key % 5].get('%d-%s' % (key, pool[key % 5])).delete()
+    print r.key
 
 elapsed_time = time.time() - start_time
 
