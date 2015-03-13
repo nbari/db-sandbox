@@ -4,7 +4,7 @@ import time
 start_time = time.time()
 
 # Connect to Riak.
-client = riak.RiakClient()
+client = riak.RiakClient(host='10.15.128.254', protocol='http')
 
 # Choose the bucket
 bucket = client.bucket('test')

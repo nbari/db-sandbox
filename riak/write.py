@@ -5,7 +5,7 @@ from uuid import uuid4
 start_time = time.time()
 
 # Connect to Riak.
-client = riak.RiakClient(host='10.15.129.218')
+client = riak.RiakClient(host='10.15.128.254', protocol='http')
 
 # Choose the bucket to store data in.
 bucket = client.bucket('test')
