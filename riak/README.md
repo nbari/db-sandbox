@@ -6,8 +6,7 @@ https://github.com/basho/riak-python-client/wiki/Tutorial-%28old%29
 
 To read:
 
-    curl http://10.15.129.219:8098/types/default/buckets/test/key
-
+    curl http://10.15.129.218:8098/types/default/buckets/test/keys/996-10.15.129.216
 
 To write:
 
