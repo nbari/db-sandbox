@@ -1,6 +1,8 @@
 import riak
 import time
 
+from random import randint
+
 start_time = time.time()
 
 pool = ['10.15.129.215',
@@ -20,7 +22,7 @@ for ip in pool:
 
 for key in range(1000):
     print 'Stored data for key %d-%s: %s' % (
-        key, pool[key % 5], client[key % 5].get('%d-%s' % (key, pool[key % 5])).data)
+        key, pool[key % 5], client[randint(0, 4)].get('%d-%s' % (key, pool[key % 5])).data)
 
 
 elapsed_time = time.time() - start_time
