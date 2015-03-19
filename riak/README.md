@@ -11,3 +11,7 @@ To read:
 To write:
 
     curl -XPUT http://10.15.129.219:8098/buckets/images/keys/FreeBSD.jpg -H 'Content-Type: image/jpeg' --data-binary @FreeBSD.jpg
+
+To read using auth example:
+
+    curl -u riakuser:password https://10.15.129.218:8098/types/default/buckets/test/keys/996-10.15.129.216 --insecure
