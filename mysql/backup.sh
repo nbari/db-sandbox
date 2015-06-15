@@ -12,7 +12,7 @@ USER=${MYSQL_USER:-root}
 # ----------------------------------------------------------------------------
 [ -d "${BACKUP_PATH}/${DB_NAME}" ] ||  mkdir -p "${BACKUP_PATH}/${DB_NAME}"
 
-echo "\033[0;33mStarting to backing up...\033[0m"
+echo "Backup $DB_NAME on: /${BACKUP_PATH}/${DB_NAME}/${DATE}.sql.bz2"
 
 # ----------------------------------------------------------------------------
 # check if mysqldump and dump
