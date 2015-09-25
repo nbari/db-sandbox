@@ -3,6 +3,10 @@ Tutorial
 
 https://github.com/basho/riak-python-client/wiki/Tutorial-%28old%29
 
+Riak Python Client:
+
+    pip install --user riak
+
 
 To read:
 
